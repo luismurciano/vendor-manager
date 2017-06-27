@@ -1,0 +1,33 @@
+{
+  "name": "vendor-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "bin": {
+    "gulp": "node_modules/.bin/gulp"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "gulp js",
+    "uglify": "gulp uglify",
+    "gulp": "gulp"
+  },
+  "author": "luismurciano@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "gulp": "https://github.com/gulpjs/gulp.git#4.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-main-bower-files": "^1.6.2",
+    "gulp-print": "^2.0.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8"
+  }
+}

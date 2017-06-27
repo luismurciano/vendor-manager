@@ -1,0 +1,31 @@
+{
+  "name": "vendor-manager",
+  "authors": [
+    "Luis Murciano <luismurciano@gmail.com>"
+  ],
+  "description": "gestor de bundles (vendor)",
+  "main": "gulp.js",
+  "keywords": [
+    "vendor",
+    "bundle",
+    "gulp"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.11",
+    "jquery": "^3.2.1"
+  },
+  "overrides": {
+    "angular": {"main": ["./angular.min.js","angular.min.js.map"]},
+    "jquery": {"main": ["./dist/jquery.min.js", "./dist/jquery.min.js.map"]}
+  }
+}
