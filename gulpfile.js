@@ -100,6 +100,15 @@ function index() {
 }
 gulp.task('index', index);
 
+gulp.task ('config', function () {
+	console.log('config_'+ options.environments.EI+'.json');
+	return gulp.src(paths.source + 'json/*')
+		.pipe(plugins.filter('**/config_'+ options.environments.EI+'.json'))
+		.pipe(plugins.print())
+		.pipe(plugins.rename('json/config_localhost.json'))
+		.pipe(gulp.dest(paths.scripts.dest));
+})
+
 // Concatena todos los scripts de dependencias de bower
 var vendor =  function(){
 	return gulp.src('./bower.json')
